@@ -1,0 +1,369 @@
+*{
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+
+
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Open Sans',sans-serif;
+}
+
+header{
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+}
+
+.blabla {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+.blabla .ring {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    margin: -30px;
+    border-radius: 50%;
+    border: 4px solid transparent;
+    border-top: 4px solid transparent;
+    animation: animate 4s linear infinite;
+}
+
+@keyframes animate
+{
+    0%
+    {
+        transform: rotate(0deg);
+    }
+    100%
+    {
+        transform: rotate(360deg);
+    }
+}
+
+.blabla .ring::before {
+    content: '';
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    background: cyan;
+    box-shadow: 0 0 0 5px #24ecff33,
+    0 0 0 10px #24ecff22,
+    0 0 0 20px #24ecff11,
+    0 0  20px #24ecff,
+    0 0  50px #24ecff;
+
+}
+
+.blabla .ring:nth-child(2){
+    
+    animation: animate2 4s linear infinite;
+    animation-delay: -1s;
+    border-top: 4x solid transparent;
+    border-left: 4px solid transparent
+}
+
+.blabla .ring:nth-child(2)::before {
+    content: '';
+    position: absolute;
+    top: initial;
+    bottom: 12px;
+    left: 12px;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    background: rgb(0, 255, 98);
+    box-shadow: 0 0 0 5px #93ff2d33,
+    0 0 0 10px #93ff2d22,
+    0 0 0 20px #93ff2d11,
+    0 0  20px #93ff2d,
+    0 0  50px #93ff2d;
+
+}
+
+@keyframes animate2
+{
+    0%
+    {
+        transform: rotate(360deg);
+    }
+    100%
+    {
+        transform: rotate(0deg);
+    }
+}
+
+.blabla .ring:nth-child(3) {
+     
+    animation: animate2 4s linear infinite;
+    animation-delay: -3s;
+    position: absolute;
+    bottom: 66.66px;
+    border-top: 4px solid transparent;
+    border-left: #e41cf8;
+ }
+
+ .blabla .ring:nth-child(3)::before {
+    content: '';
+    position: absolute;
+    top: initial;
+    bottom: 12px;
+    left: 12px;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    background: #e41cf8;
+    box-shadow: 0 0 0 5px #e41cf833,
+    0 0 0 10px #e41cf822,
+    0 0 0 20px #e41cf811,
+    0 0  20px #e41cf8,
+    0 0  50px #e41cf8;
+
+}
+
+
+ .blabla p {
+    position: absolute;
+    color: black;
+    font-size:  1.5em;
+    font-family: consolas;
+    bottom: -80px;
+    letter-spacing: 0.2em;
+ }
+.highline {
+    width: 1100px;
+    margin: auto;
+    position: relative;
+}
+
+.wrapper{
+    width: 1100px;
+    margin: auto;
+    position: relative;
+}
+
+.logo a {
+    font-size: 50px;
+    font-weight: bold;
+    float: left;
+    font-family: courier;
+    color: rgb(26, 26, 94);
+}
+
+.menu {
+    float: right;
+}
+
+nav {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    line-height: 80px;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    background: rgb(255, 255, 255);
+    z-index: 1;
+    border-bottom: 1px solid  rgb(26, 26, 94);
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+nav ul li {
+    float: left;
+}
+nav ul li a {
+    color:  rgb(26, 26, 94)white;
+    font-weight: bold;
+    text-align: center;
+    padding: 0px 32px 0px 32px; 
+    text-decoration: none;
+}
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+section {
+    margin: auto;
+    display: flex;
+    margin-top: 50px;
+    }
+
+.gmbrsndri1 {
+    border-radius: 20%;
+}
+
+.mask {
+    background-image: url(./img/Hollow-face-illusion-unscreen.gif);
+    position: relative;
+    background-position:center;
+    width: 500px;
+    background-size: cover;
+}
+
+.batas {
+    width: 1400px;
+    position: relative;
+    margin-top: 60px;
+}
+
+.gif {
+    background-image: url(./img/tumblr_ny54f8SJcU1qmsav0o1_500\ \(1\).webp);
+    background-size: cover;
+    background-position: top-center;
+    width: 1400px;
+    position: relative;
+   }
+
+.kolom {
+    margin-top: 81px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+}
+
+
+h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 800;
+    font-size: 45px;
+    margin-bottom: 20px;
+    color: rgb(26, 26, 94);
+    width: 100%;
+    line-height: 50px;
+}
+
+a.tbl-biru {
+    background:  rgb(26, 26, 94);
+    border-radius: 20px;
+    margin-top: 20px;
+    padding: 15px 20px 15px 20px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+a.tbl-biru:hover {
+    background:rgb(112, 112, 175);
+   text-decoration: none;
+}
+
+a.tbl-pink {
+    background:rgb(112, 112, 175);
+    border-radius: 20px;
+    margin-top: 20px;
+    padding: 15px 20px 15px 20px;
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: bold;
+} 
+
+a.tbl-pink:hover {
+    background:rgb(26, 26, 94);
+}
+
+p {
+    margin: 10px 0px 10px 10px;
+    padding: 10px 0px 10px 0px;
+}
+
+.tengah {
+    text-align: center;
+    width: 100%;
+    margin-top: 40px;
+}
+
+.list-contact{
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.kartu{
+    width: 20%;
+    margin: 0 auto;
+}
+
+.kartu img {
+    width: 80%;
+    border-radius: 50%;
+    }
+
+.kartu p {
+        border: 1px solid rgb(26, 26, 94);
+        padding: 10px 30px;
+        text-decoration: none;
+        transition: 0.6s ease;
+        font-size: 20px;
+        font-weight: 700px;
+        font: bold;
+        border-radius: 5px;
+        font-family: 'conselas';
+        text-align: center;
+        background-color:  rgb(255, 255, 255);
+    }
+
+    .kartu p :hover{
+        background-color:  rgb(26, 26, 94);
+        color: rgb(255, 255, 255);
+    }
+
+@media screen and (max-width: 991.98px) {
+        .wrapper { 
+            width: 90%;
+        }
+
+        .logo a{
+            display: block;
+            width: 100%;
+            text-align: center;
+        }
+
+        nav .menu{
+            width: 100%;
+            margin: 0;
+        }
+
+        nav .menu ul { 
+            text-align: center;
+            margin: auto;
+            line-height: 60px;
+        }
+
+        nav menu ul li {
+            display: inline-block;
+            float: none;
+        }
+
+        section {
+            display: block;
+        }
+
+        section img{
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        .kartu-tutor img {
+            width: 50%;
+        }
+
+    }
